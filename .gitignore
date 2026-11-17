@@ -1,0 +1,15 @@
+# Configurações sensíveis
+**/appsettings.json
+**/appsettings.Development.json
+!**/appsettings.example.json
+
+# Compilação
+**/bin/
+**/obj/
+
+# Visual Studio
+.vs/
+
+# Arquivos de ambiente
+.env
+.env.*
