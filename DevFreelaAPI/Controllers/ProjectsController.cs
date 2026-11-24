@@ -1,4 +1,5 @@
 ﻿using DevFreelaAPI.Models;
+using DevFreelaAPI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 
@@ -9,23 +10,27 @@ namespace DevFreelaAPI.Controllers
     public class ProjectsController : ControllerBase
     {
         private readonly FreelanceCostConfig _config;
+        private readonly IConfigService _configService;
 
-        public ProjectsController(IOptions<FreelanceCostConfig> options) // Recebe as configurações através da injeção de dependência (IOptions).
+        public ProjectsController(IOptions<FreelanceCostConfig> options, IConfigService configService) // Recebe as configurações através da injeção de dependência (IOptions).
         {
             _config = options.Value; // Obtém os valores configurados no appsettings.json.
+            _configService = configService;
         }
 
         // GET api/projects/search=crm
         [HttpGet]
-        public IActionResult Get(string search)
+        public IActionResult Get(string search = "")
         {
-            return Ok();
+            return Ok(_configService.GetValue());
         }
 
         // GET api/projects/123
         [HttpGet("{id}")]
         public IActionResult GetById(int id)
         {
+            throw new Exception();
+
             return Ok();
         }
 
