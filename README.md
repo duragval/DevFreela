@@ -4,7 +4,7 @@ API REST desenvolvida com C# e ASP.NET Core, como parte de uma mentoria .NET vol
 
 O projeto tem como objetivo aplicar, na prática, conceitos e boas práticas do desenvolvimento de APIs utilizando o ecossistema .NET.
 
-Projeto de estudo: este repositório faz parte de uma mentoria .NET e está sendo desenvolvido de forma incremental. Por esse motivo, algumas funcionalidades ainda não estão implementadas ou possuem implementações provisórias. A estrutura atual representa etapas do processo de aprendizado e evolução do projeto, e não uma aplicação finalizada.
+Projeto de estudo: este repositório faz parte de uma mentoria .NET. Por esse motivo, algumas funcionalidades ainda não estão implementadas ou possuem implementações provisórias. A estrutura atual representa etapas do processo de aprendizado e evolução do projeto, e não uma aplicação finalizada.
 
 ## Tecnologias utilizadas
 
